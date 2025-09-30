@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 export default function Home() {
   return (
-    <div className='grid lg:grid-cols-2 gap-4 p-4 lg:p-0 lg:w-[95%] mb-20 lg:mb-0'>
+    <div className='grid lg:grid-cols-2 gap-4 p-4 lg:p-0 lg:w-[95%] mb-20 lg:mb-0 lg:mt-30'>
 <div className='lg:flex justify-center hidden'>
   <div className='w-90 h-full rounded-md shadow-md relative'>
     <Image
