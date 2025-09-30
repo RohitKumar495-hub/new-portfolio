@@ -29,9 +29,11 @@ export default function Home() {
       <div className='grid place-content-center gap-8 lg:px-10'>
         <div className='grid gap-4'>
           <h1 className='text-amber-300 uppercase font-bold text-2xl lg:text-4xl'>- I&apos;m rohit kumar.</h1>
-          <h2 className='lg:text-xl font-semibold uppercase ml-6'>mern stack javascript developer</h2>
+          <h2 className='lg:text-xl font-semibold uppercase ml-6'>mern stack developer</h2>
         </div>
-        <p className='text-justify leading-9'>I&apos;m a Bengaluru-based MERN-stack JavaScript web developer, specializing in creating clean and user-friendly digital experiences. My passion is crafting top-notch software that enriches users&apos; lives. I excel in designing highly responsive UI components and writing high-quality, reusable code. I&apos;m skilled in monitoring and optimizing performance, as well as troubleshooting and debugging to enhance quality.</p>
+        <p className='text-justify leading-9'>I&apos;m , a dedicated MERN Stack Developer with a passion for building dynamic and responsive web applications. I specialize in MongoDB, Express.js, React, and Node.js, Next.js, developing both engaging frontends and efficient, scalable backends.
+
+I enjoy transforming ideas into real-world digital solutions, optimizing performance, and creating user-friendly interfaces. Constantly learning and experimenting with new technologies, I thrive on challenges and aim to deliver high-quality, impactful applications. Collaboration, clean code, and problem-solving are at the core of my work philosophy.</p>
         <Link
           href={'/about'}
           className='border border-amber-500 rounded-4xl w-fit flex items-center justify-between hover:bg-amber-500'

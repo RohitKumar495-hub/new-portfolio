@@ -10,14 +10,14 @@ const projects = [
     title: "Daily Drop",
     category: "Website",
     image: "/dailydrop.png",
-    link: "https://dailydrop.com",
+    link: "https://daily-drop-full-stack-by11.vercel.app/",
   },
   {
     id: 2,
     title: "Portfolio",
     category: "Website",
-    image: "/dailydrop.png",
-    link: "https://yourportfolio.com",
+    image: "/portfolio.png",
+    link: "https://new-portfolio-steel-mu.vercel.app/",
   },
   {
     id: 3,
