@@ -1,5 +1,6 @@
 import SkillsSection from '@/components/SkillsSection'
 import Timeline from '@/components/Timeline'
+import Image from 'next/image'
 import React from 'react'
 
 const AboutPage = () => {
@@ -14,13 +15,14 @@ const AboutPage = () => {
     <div className='mt-10 mb-20'>
       <h1 className='uppercase font-bold text-4xl text-center'>About <span className='text-amber-300'>Me</span></h1>
       {/* profile only show on mobile */}
-      <div className='w-40 h-40 rounded-full border-2 border-gray-600 shadow lg:hidden mx-auto overflow-hidden mt-10'>
-        <img 
-          src="/rohit.jpg" 
-          alt="Rohit"
-          className='w-full h-full object-cover object-center'
-        />
-      </div>
+<div className='w-40 h-40 rounded-full border-2 border-gray-600 shadow lg:hidden mx-auto overflow-hidden relative'>
+  <Image
+    src="/rohit.jpg"
+    alt="Rohit"
+    fill
+    className='object-cover object-center'
+  />
+</div>
 
       {/* personal info + experiences */}
       <div className='grid lg:grid-cols-2 gap-4 lg:mt-20 mt-10 place-items-center p-2 lg:p-0'>

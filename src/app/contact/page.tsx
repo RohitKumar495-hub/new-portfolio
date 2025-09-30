@@ -29,7 +29,7 @@ const ContactPage = () => {
       {/* text-area */}
       <div className='flex flex-col lg:flex-row justify-center items-center lg:gap-20 lg:mt-20 mt-10'>
         <div className='lg:w-xs grid gap-6'>
-          <h2 className='uppercase font-bold text-2xl'>don't be shy !</h2>
+          <h2 className='uppercase font-bold text-2xl'>don&apos;t be shy !</h2>
           <p className='text-justify font-semibold text-xs lg:text-base'>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
 
           {/* about , contact-no , email */}
