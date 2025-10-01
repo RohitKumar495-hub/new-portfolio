@@ -25,7 +25,7 @@ const Navbar = () => {
   // Background & text colors based on theme
   const bgColor = theme === 'dark' ? 'bg-gray-800' : 'bg-white'
   const iconColor = theme === 'dark' ? 'text-white' : 'text-gray-900'
-  const hoverColor = 'hover:bg-amber-300'
+  const hoverColor = 'hover:bg-amber-500'
 
   return (
     <>
@@ -36,8 +36,8 @@ const Navbar = () => {
             href={navItem.url}
             key={index}
             className={`${
-              pathName === navItem.url ? 'bg-amber-300' : bgColor
-            } group relative flex items-center justify-end w-12 h-12 rounded-full ${hoverColor} overflow-hidden transition-all duration-300 hover:w-36`}
+              pathName === navItem.url ? 'bg-amber-500' : bgColor
+            } group relative flex items-center justify-end w-12 h-12 rounded-full ${hoverColor} overflow-hidden transition-all duration-300 hover:w-38`}
           >
             <navItem.icon size={25} className={`z-10 mr-2.5 ${iconColor}`} />
             <span className="absolute right-12 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap font-semibold uppercase">

@@ -1,7 +1,9 @@
 import SkillsSection from '@/components/SkillsSection'
 import Timeline from '@/components/Timeline'
 import Image from 'next/image'
+import Link from 'next/link';
 import React from 'react'
+import { FiDownload } from 'react-icons/fi';
 
 const AboutPage = () => {
   const experiencesData = [
@@ -43,6 +45,19 @@ const AboutPage = () => {
                   <p className=''>Languages: <span className='font-medium'>Hindi , English</span></p>
               </div>
             </div>
+    <Link href="/R_Resume.pdf" download>
+      <button className="group border border-amber-500 rounded-full w-fit flex items-center overflow-hidden hover:bg-amber-500 transition duration-300 cursor-pointer">
+        {/* Text with padding */}
+        <span className="px-6 py-2 text-xs lg:text-base text-amber-500 group-hover:text-black font-medium">
+          DOWNLOAD RESUME
+        </span>
+
+        {/* Arrow circle */}
+        <span className="bg-amber-500 text-black rounded-full lg:w-14 lg:h-14 w-10 h-10 flex items-center justify-center group-hover:bg-black group-hover:text-amber-500 transition duration-300">
+          <FiDownload size={22} />
+        </span>
+      </button>
+    </Link>
         </div>
             {/* experiences */}
             <div className='grid grid-cols-2 gap-8 p-2'>

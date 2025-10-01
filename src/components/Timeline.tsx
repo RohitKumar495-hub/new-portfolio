@@ -29,7 +29,7 @@ const timelineData = [
   {
     year: "2020 - 2021",
     title: "SECONDARY STUDY",
-    company: "Don Bosco Children's Point",
+    company: "Lyceum International School",
     description:
       'Completed my Secondary School education in 2021 during the COVID-19 pandemic, when final exams were not conducted. Despite the unprecedented situation, I focused on self-learning and building a strong academic foundation, which has supported my continued growth in higher studies.',
     icon: <FaGraduationCap className="w-5 h-5 text-white" />,

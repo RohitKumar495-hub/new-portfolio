@@ -11,6 +11,9 @@ const projects = [
     category: "Website",
     image: "/dailydrop.png",
     link: "https://daily-drop-full-stack-by11.vercel.app/",
+    description:
+      "An e-commerce web app for daily essentials with user authentication, cart, and payments.",
+    tech: ["React.js", "TailwindCSS", "MongoDB", "Node.js", "Stripe"],
   },
   {
     id: 2,
@@ -18,6 +21,9 @@ const projects = [
     category: "Website",
     image: "/portfolio.png",
     link: "https://new-portfolio-steel-mu.vercel.app/",
+    description:
+      "A modern personal portfolio website showcasing skills, projects, and contact info.",
+    tech: ["Next.js", "TailwindCSS", "Email js" ,"Framer Motion"],
   },
   {
     id: 3,
@@ -25,6 +31,9 @@ const projects = [
     category: "Website",
     image: "/dailydrop.png",
     link: "https://chatty.com",
+    description:
+      "A real-time chat application with user authentication and private/group chats.",
+    tech: ["React", "Node.js", "Socket.io", "MongoDB"],
   },
   {
     id: 4,
@@ -32,6 +41,9 @@ const projects = [
     category: "Freelancing",
     image: "/dailydrop.png",
     link: "https://halwiz.com",
+    description:
+      "A freelancing platform connecting clients and freelancers with secure payments.",
+    tech: ["Next.js", "Express", "MongoDB", "Stripe"],
   },
   {
     id: 5,
@@ -39,6 +51,9 @@ const projects = [
     category: "Website",
     image: "/dailydrop.png",
     link: "https://soss.com",
+    description:
+      "A one-stop solution for college students with mentorship, reviews, and resources.",
+    tech: ["Next.js", "TailwindCSS", "Firebase"],
   },
 ];
 
@@ -81,24 +96,19 @@ export default function Portfolio() {
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
         >
           {filteredProjects.map((project) => (
-            <Link
+            <motion.div
               key={project.id}
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block"
+              layout
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.9 }}
+              transition={{ duration: 0.3 }}
+              className="rounded-lg overflow-hidden shadow-lg bg-gray-900 border border-gray-700 hover:border-yellow-400 hover:shadow-yellow-400/40 transition-all duration-300 flex flex-col"
             >
-              <motion.div
-                layout
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.3 }}
-                className="relative group rounded-md overflow-hidden shadow-lg bg-gray-900 hover:shadow-yellow-400/40 transition-shadow duration-300 cursor-pointer"
-              >
-                {/* Skeleton Loader */}
+              {/* Image */}
+              <Link href={project.link} target="_blank" rel="noopener noreferrer">
                 {!loadedImages[project.id] && (
-                  <div className="w-full h-60 bg-gray-700 animate-pulse" />
+                  <div className="w-full h-56 bg-gray-700 animate-pulse" />
                 )}
 
                 <Image
@@ -106,22 +116,47 @@ export default function Portfolio() {
                   alt={project.title}
                   width={600}
                   height={400}
-                  className={`w-full h-60 object-cover transition-opacity duration-500 ${
+                  className={`w-full h-56 object-cover transition-opacity duration-500 p-2 ${
                     loadedImages[project.id] ? "opacity-100" : "opacity-0"
                   }`}
                   onLoadingComplete={() =>
                     setLoadedImages((prev) => ({ ...prev, [project.id]: true }))
                   }
                 />
+              </Link>
 
-                {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-yellow-400 bg-opacity-90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h3 className="text-2xl font-bold text-black">
-                    {project.title}
-                  </h3>
+              {/* Card Body */}
+              <div className="p-5 text-left flex flex-col flex-1">
+                <h3 className="text-xl font-bold text-yellow-400 mb-2">
+                  {project.title}
+                </h3>
+                <p className="text-gray-300 text-sm mb-4 flex-1">
+                  {project.description}
+                </p>
+
+                {/* Tech Stack */}
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.tech.map((t, index) => (
+                    <span
+                      key={index}
+                      className="px-2 py-1 text-xs font-medium bg-yellow-400 text-black rounded"
+                    >
+                      {t}
+                    </span>
+                  ))}
                 </div>
-              </motion.div>
-            </Link>
+
+                {/* Visit Button */}
+                <Link
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-auto inline-block text-center px-4 py-2 bg-yellow-400 text-black font-semibold rounded hover:bg-yellow-300 transition-colors"
+                >
+                  Visit Project
+                </Link>
+              </div>
+            </motion.div>
           ))}
         </motion.div>
       </div>
