@@ -13,7 +13,7 @@ const projects = [
     link: "https://daily-drop-full-stack-by11.vercel.app/",
     description:
       "An e-commerce web app for daily essentials with user authentication, cart, and payments.",
-    tech: ["React.js", "TailwindCSS", "MongoDB", "Node.js", "Stripe"],
+    tech: ["React.js", "TailwindCSS", "Redux", "Express", "MongoDB", "Node.js", "Stripe"],
   },
   {
     id: 2,
@@ -43,17 +43,17 @@ const projects = [
     link: "https://halwiz.com",
     description:
       "A freelancing platform connecting clients and freelancers with secure payments.",
-    tech: ["Next.js", "Express", "MongoDB", "Stripe"],
+    tech: ["Next.js", "Tailwind CSS", "Redux", "Express", "MongoDB", "Node.js", "Stripe"],
   },
   {
     id: 5,
     title: "Soss",
     category: "Website",
-    image: "/dailydrop.png",
-    link: "https://soss.com",
+    image: "/soss.png",
+    link: "https://soss-rust.vercel.app/user/home",
     description:
       "A one-stop solution for college students with mentorship, reviews, and resources.",
-    tech: ["Next.js", "TailwindCSS", "Firebase"],
+    tech: ["Next.js", "TailwindCSS", "Node.js", "Express", "Message Central", "Redux", "Firebase"],
   },
 ];
 

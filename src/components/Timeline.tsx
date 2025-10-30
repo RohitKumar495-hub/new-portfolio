@@ -10,8 +10,16 @@ const timelineData = [
       "Currently pursuing my BCA, I am building a strong foundation in programming with C and C++, alongside web development skills. I am actively involved in hands-on projects, developing practical and user-friendly applications, while maintaining a strong academic record with a CGPA of 9.09.",
     icon: <FaGraduationCap className="w-5 h-5 text-white" />,
   },
+      {
+    year: "(July - September) 2025",
+    title: "SOFTWARE DEVELOPMENT ENGINEER",
+    company: "IdsPay",
+    description:
+      "As an SDE at IdsPay, I contributed to designing and developing scalable web solutions, collaborating with cross-functional teams to enhance product performance and user experience. I implemented several client-requested changes on the live website, ensuring smooth deployment and maintaining functionality under real-time conditions. My work focused on optimizing APIs, improving backend logic, and ensuring seamless front-end integration. Despite my dedication and consistent performance, I had to step down from the role due to college attendance and NOC-related constraints.",
+    icon: <FaBriefcase className="w-5 h-5 text-white" />,
+  },
     {
-    year: "2023 - 2023",
+    year: "(April - July) 2025",
     title: "REACT DEVELOPER INTERN",
     company: "CollegePur",
     description:
