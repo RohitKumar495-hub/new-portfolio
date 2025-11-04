@@ -27,20 +27,20 @@ const projects = [
   },
   {
     id: 3,
-    title: "Chatty",
+    title: "ConnectU",
     category: "Website",
-    image: "/dailydrop.png",
-    link: "https://chatty.com",
+    image: "/connectU.png",
+    link: "https://connect-u-vert.vercel.app",
     description:
       "A real-time chat application with user authentication and private/group chats.",
-    tech: ["React", "Node.js", "Socket.io", "MongoDB"],
+    tech: ["Next.js", "Node.js", "TailwindCSS", "Socket.io", "MongoDB"],
   },
   {
     id: 4,
     title: "Halwiz",
     category: "Freelancing",
-    image: "/dailydrop.png",
-    link: "https://halwiz.com",
+    image: "/halwiz.png",
+    link: "https://halwiz-website.vercel.app/",
     description:
       "A freelancing platform connecting clients and freelancers with secure payments.",
     tech: ["Next.js", "Tailwind CSS", "Redux", "Express", "MongoDB", "Node.js", "Stripe"],
