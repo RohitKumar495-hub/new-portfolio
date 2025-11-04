@@ -4,15 +4,12 @@ A modern, fully responsive personal portfolio website built with Next.js, TypeSc
 
 🚀 Tech Stack
 
-Next.js 14 – App Router for fast and scalable performance
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-E91E63?style=for-the-badge&logo=framer&logoColor=white)
+![EmailJS](https://img.shields.io/badge/EmailJS-FFDD00?style=for-the-badge&logo=gmail&logoColor=black)
 
-TypeScript – Type-safe development and cleaner code
-
-Tailwind CSS – Utility-first styling for rapid and responsive UI design
-
-Framer Motion – Smooth and elegant animations for better UX
-
-EmailJS – Integrated contact form without backend setup
 
 🌟 Features
 
