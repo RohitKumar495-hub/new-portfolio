@@ -1,7 +1,1 @@
-declare global {
-  interface Window {
-    gtag: (...args: any[]) => void;
-  }
-}
-
-export {};
+declare module "*.css";
