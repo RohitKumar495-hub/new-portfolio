@@ -10,7 +10,7 @@ const projects = [
     title: "Daily Drop",
     category: "Website",
     image: "/dailydrop.png",
-    link: "https://daily-drop-full-stack-by11.vercel.app/",
+    link: "https://daily-drop-full-stack-2i94.vercel.app/",
     description:
       "An e-commerce web app for daily essentials with user authentication, cart, and payments.",
     tech: ["React.js", "TailwindCSS", "Redux", "Express", "MongoDB", "Node.js", "Stripe"],
@@ -35,18 +35,18 @@ const projects = [
       "A real-time chat application with user authentication and private/group chats.",
     tech: ["Next.js", "Node.js", "TailwindCSS", "Socket.io", "MongoDB"],
   },
+  // {
+  //   id: 4,
+  //   title: "Halwiz",
+  //   category: "Freelancing",
+  //   image: "/halwiz.png",
+  //   link: "https://halwiz-website.vercel.app/",
+  //   description:
+  //     "A freelancing platform connecting clients and freelancers with secure payments.",
+  //   tech: ["Next.js", "Tailwind CSS", "Redux", "Express", "MongoDB", "Node.js", "Stripe"],
+  // },
   {
     id: 4,
-    title: "Halwiz",
-    category: "Freelancing",
-    image: "/halwiz.png",
-    link: "https://halwiz-website.vercel.app/",
-    description:
-      "A freelancing platform connecting clients and freelancers with secure payments.",
-    tech: ["Next.js", "Tailwind CSS", "Redux", "Express", "MongoDB", "Node.js", "Stripe"],
-  },
-  {
-    id: 5,
     title: "Soss",
     category: "Website",
     image: "/soss.png",
